@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tertiary {
+    color: var(--tertiary-color);
+}
+
+
+:root {
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Noto Sans', sans-serif;
+    --bg-color: #f2d2c0;
+    --primary-color: #24A19C;
+    --secondary-color: #325288;
+    --tertiary-color: #D96098;
+    --text: #1a1a1a;
 }
