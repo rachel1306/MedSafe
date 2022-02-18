@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 import firebase from 'firebase/compat/app';
 import { auth, db } from '../../../firebase/firebase';
 import './register.css'
 
-//import logo from '../../../assets/logo.png'
+import logo from '../../../assets/logo.png'
 
 function Register() {
 
@@ -53,7 +53,44 @@ function Register() {
     }
 
 
-    return 
+    return (
+
+        <div className="align">
+            <div class="grid align__item">
+
+    <div class="register">
+
+     <img src={logo} alt="" />
+
+      <h2>Sign Up</h2>
+
+      <form action="" method="post" class="form">
+          <div class="form__field">
+          <input type="text" placeholder="Username" />
+        </div>
+
+        <div class="form__field">
+          <input type="email" placeholder="info@mailaddress.com" />
+        </div>
+        <div class="form__field">
+          <input type="number" placeholder="(+91)" />
+        </div>
+        <div class="form__field">
+          <input type="password" placeholder="••••••••••••" />
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Sign Up" />
+        </div>
+
+      </form>
+
+      <p>Already have an accout? <Link to="/login">Login</Link></p>
+
+    </div>
+
+  </div>
+        </div>
 
         // <div className="register">
         //     <img onClick={goHome} src={logo} alt="" className='auth__Logo'/>
@@ -83,8 +120,12 @@ function Register() {
         //             </div>
         //         </form>
         //     </div>
+        //     <div className='footer'>
+        //         <p>Already have an account? <Link to="/login">Login</Link>.</p>
+        //     </div>
            
         // </div>
+    )
 
 }
 
