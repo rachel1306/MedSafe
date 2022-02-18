@@ -4,7 +4,7 @@ import { AuthContext } from '../../../authcontext/authcontext'
 import { auth } from '../../../firebase/firebase';
 import './login.css'
 
-//import logo from '../../../assets/logo.png'
+import logo from '../../../assets/logo.png'
 
 function Login() {
 
@@ -44,7 +44,39 @@ function Login() {
     }
 
 
-  return 
+  return (
+
+    <div className="align">
+        <div class="grid align__item">
+
+    <div class="register">
+
+      <img src={logo} alt="" />
+
+      <h2>Login</h2>
+
+      <form action="" method="post" class="form">
+
+        <div class="form__field">
+          <input type="email" placeholder="info@mailaddress.com" />
+        </div>
+
+        <div class="form__field">
+          <input type="password" placeholder="••••••••••••" />
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Login" />
+        </div>
+
+      </form>
+
+      <p>Don't have an accout? <Link to="/register">Create an account</Link></p>
+
+    </div>
+
+  </div>
+    </div>
 //   <div className="login">
 //             <img onClick={goHome} src={logo} alt="" className='auth__Logo'/>
 //             <h2>Sign in to us</h2>
@@ -69,7 +101,7 @@ function Login() {
 //             </div>
 //         </div>
 
-
+  )
 }
 
 export default Login;
