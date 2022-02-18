@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Routes>
+      <Home />
+        {/* <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
@@ -25,7 +26,7 @@ function App() {
                   <Book />
                 </PrivateRoute>
               }
-            /> */}
+            /> */}{/*}
             <Route path="cart" 
               element={
                 <PrivateRoute>
@@ -51,7 +52,7 @@ function App() {
             />
 
             <Route path="*" element={<Navigate replace to="/" />} />
-        </Routes>
+        </Routes> */}
       </BrowserRouter>
     </div>
   );
